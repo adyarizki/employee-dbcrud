@@ -32,17 +32,20 @@ export default function CreatePage() {
           className="w-full p-2 border rounded"
           placeholder="Name"
           onChange={e => setForm({ ...form, name: e.target.value })}
+          required
         />
         <input
           className="w-full p-2 border rounded"
           placeholder="Position"
           onChange={e => setForm({ ...form, position: e.target.value })}
+          required
         />
         <input
           className="w-full p-2 border rounded"
           placeholder="Salary"
           type="number"
           onChange={e => setForm({ ...form, salary: e.target.value })}
+          required
         />
         <div className='flex justify-end'>
            <button className="bg-blue-600 text-white px-4 py-2 rounded" type="submit">
