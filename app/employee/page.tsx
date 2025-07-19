@@ -36,7 +36,7 @@ export default function EmployeePage() {
               <p className="text-sm text-gray-500">Rp {emp.salary.toLocaleString()}</p>
             </div>
             <div className="flex gap-3">
-              <Link href={`/employee/edit/${emp.id}`} className="text-blue-600">Edit</Link>
+              <Link href={`/employee/update/${emp.id}`} className="text-blue-600">Edit</Link>
               <button onClick={() => handleDelete(emp.id)} className="text-red-500">Hapus</button>
             </div>
           </li>
