@@ -35,7 +35,7 @@ export default function UpdatePage() {
 
   return (
     <main className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Edit Karyawan</h1>
+      <h1 className="text-2xl font-bold mb-4">Update Employee</h1>
       <form onSubmit={handleUpdate} className="space-y-4">
         <input className="border px-3 py-2 w-full" value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} />
         <input className="border px-3 py-2 w-full" value={form.position} onChange={e => setForm({ ...form, position: e.target.value })} />
