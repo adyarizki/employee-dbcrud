@@ -25,28 +25,31 @@ export default function CreatePage() {
   };
 
   return (
-    <main className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Tambah Karyawan</h1>
-      <form onSubmit={handleSubmit} className="space-y-4">
+    <main className="max-w-2xl mx-auto p-6 mt-20">
+      <h1 className="text-2xl font-bold mb-4 bg bg-gray-900 p-2 text-white">Add Employee</h1>
+      <form onSubmit={handleSubmit} className="space-y-3 mb-6">
         <input
-          className="border px-3 py-2 w-full"
-          placeholder="Nama"
+          className="w-full p-2 border rounded"
+          placeholder="Name"
           onChange={e => setForm({ ...form, name: e.target.value })}
         />
         <input
-          className="border px-3 py-2 w-full"
-          placeholder="Jabatan"
+          className="w-full p-2 border rounded"
+          placeholder="Position"
           onChange={e => setForm({ ...form, position: e.target.value })}
         />
         <input
-          className="border px-3 py-2 w-full"
-          placeholder="Gaji"
+          className="w-full p-2 border rounded"
+          placeholder="Salary"
           type="number"
           onChange={e => setForm({ ...form, salary: e.target.value })}
         />
-        <button className="bg-green-600 text-white px-4 py-2 rounded" type="submit">
-          Simpan
-        </button>
+        <div className='flex justify-end'>
+           <button className="bg-blue-600 text-white px-4 py-2 rounded" type="submit">
+              Add
+            </button>
+        </div>
+       
       </form>
     </main>
   );
