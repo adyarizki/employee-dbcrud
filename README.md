@@ -2,7 +2,7 @@
 
 - Create, Read, update, dan delete employee
 
-## 🛠️ Instalasi & Setup
+
 
 ### 1. Clone Repository
 
